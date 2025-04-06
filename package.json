@@ -1,19 +1,26 @@
 {
-  "name": "food_order_backend",
+  "name": "food-order-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Backend API for Food Order Application built with Node.js, Express, and TypeScript.",
+  "main": "dist/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node-dev --respawn index.ts",
-    "dev": "nodemon index.ts"
+    "dev": "nodemon src/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ibrahim23dev/Food_Order_Backend.git"
+    "url": "https://github.com/ibrahim23dev/Food_Order_Backend.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "express",
+    "typescript",
+    "nodejs",
+    "backend",
+    "api",
+    "food-order"
+  ],
+  "author": "Ibrahim",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
@@ -22,12 +29,19 @@
   "homepage": "https://github.com/ibrahim23dev/Food_Order_Backend#readme",
   "dependencies": {
     "@types/cors": "^2.8.17",
-    "@types/express": "^5.0.0",
+    "@types/express": "^4.17.21",
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
-    "express": "^4.21.2",
-    "nodemon": "^3.1.9",
+    "dotenv": "^16.4.7",
+    "express": "^4.18.2",
+    "joi": "^17.13.3",
+    "knex": "^3.1.0",
+    "node-cache": "^5.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.2",
+    "nodemon": "^3.1.0",
     "ts-node-dev": "^2.0.0",
-    "typescript": "^5.7.3"
+    "typescript": "^5.3.3"
   }
 }
